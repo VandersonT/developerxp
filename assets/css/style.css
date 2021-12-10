@@ -16,7 +16,6 @@ li{
 html {
     max-width: 2000px;
     min-height: 300px;
-    scroll-behavior: smooth;
 }
 
 /*-----------------SCROLL-BAR---------------*/

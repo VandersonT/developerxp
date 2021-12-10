@@ -25,7 +25,7 @@ header{
     background-image: url('../images/mainBanner.jpg');
     background-position: center;
     background-size: 100% 100%;
-    padding-top: 50px;
+    padding-top: 5vh;
 }
 
 .banner h1{
@@ -89,6 +89,7 @@ header{
 }
 .benefits--single{
     display: none;
+    margin-right: 5px;
 }
 .benefits img{
     width: 70px;
@@ -369,6 +370,7 @@ footer{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logoFooter{
@@ -430,4 +432,89 @@ footer form button:active{
     width: 170px;
     height: 100px;
 }
+/*--------------------------------------------------------------*/
+
+/*--------------------------RESPONSIVE--------------------------*/
+@media screen and (max-width: 900px){
+    .benefits img{
+        width: 55px;
+        height: 55px;
+    }
+    .benefits{
+        height: 120px;
+        padding-top: 20px;
+    }
+    .benefits h2{
+        font-size: 14px;
+    }
+    .logoFooter{
+        width: 190px;
+        height: 40px;
+    }
+    footer form{
+        display: flex;
+        align-items: center;
+    }
+    footer form p{
+        font-size: 13px;
+    }
+    footer form input{
+        width: 300px;
+        font-size: 14px;
+    }
+    footer form button{
+        width: max-content;
+        font-size: 14px;
+    }
+    .quizTimeImg{
+        width: 140px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .banner{
+        background-size: cover;
+    }
+    .boxQuizzes{
+        padding-top: 50px;
+    }
+    .quizzes,
+    .filter,
+    .boxMainTitle{
+        width: 100%;
+    }
+    footer{
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    footer form{
+        margin-top: 50px;
+    }
+    .quizTimeImg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        justify-content: center;
+    }
+    .benefits img{
+        width: 40px;
+        height: 40px;
+    }
+    .benefits h2{
+        font-size: 11px;
+    }
+    .benefits{
+        height: 100px;
+    }
+    footer form input{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
 /*--------------------------------------------------------------*/
