@@ -59,57 +59,76 @@
             <div class="filter">
                 <h1>
                     <i class="fab fa-connectdevelop"></i>
-                    Escolha o tipo de quiz
+                    Filtre pelo tipo de quiz
                 </h1>
-                <form>
-                    <div class="filter1">
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Css</label>
+                <form class="formFilter">
+                    <div class="formFilter--box">
+                        <div class="filter1">
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Css</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Fron-end</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Back-end</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Sass</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Fron-end</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Back-end</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Sass</label>
+                        <div class="filter2">
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Html</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>JavaScript</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>Php</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" checked />
+                                <label>DevWeb</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="filter2">
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Html</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>JavaScript</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>Php</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" checked />
-                            <label>DevWeb</label>
-                        </div>
-                    </div>
-                    <div class="filter2">
-                    
-                    </div>
+                    <button>Filtrar</button>
                 </form>
+
             </div>
 
             <div class="search">
-                
+                <div class="boxMainTitle">
+                    <h1><i class="fas fa-feather-alt"></i>Quizzes</h1>
+                </div>
+                <form class="boxSearch">
+                    <i class="fas fa-search iconInput"></i>
+                    <input type="text" placeholder="Pesquise algum quiz" />
+                    <button><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="quizSingleModel">
+                <div class="quizSingle">
+                    <img src="./assets/images/js.jp" alt="descrição da imagem para o google" />
+                    <h1>QuizName</h1>
+                    <p>QuizDescription</p>
+                    <button>Iniciar Quiz</button>
+                </div>
             </div>
 
             <div class="quizzes">
-                
+                <!--Load the quizzes here-->
+                <p class="empty"><i class="far fa-sad-cry"></i>Oh não! Não encontramos nenhum quiz com esse filtro.</p>
+                <p class="loading"><i class="fas fa-spinner"></i>Carrengando Quizzes...</p>
             </div>
 
         </section>

@@ -1,6 +1,3 @@
-*{
-    overflow-x: hidden;
-}
 /*----------------------------HEADER----------------------------*/
 header{
     width: 100vw;
@@ -9,7 +6,7 @@ header{
     background: linear-gradient(#451483, #040E2F);
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 0 40px;
 }
 .logo{
     width: 150px;
@@ -33,7 +30,7 @@ header{
 
 .banner h1{
     text-align: center;
-    background: linear-gradient(180deg, rgb(195, 0, 255) 12%, rgb(8, 56, 214) 91%);
+    background: linear-gradient(180deg, rgb(195, 0, 255) 12%, rgb(8, 121, 214) 91%);
     color: rgb(255, 255, 255);
     padding: 5px 0;
     font-family: 'Permanent Marker', cursive;
@@ -88,6 +85,7 @@ header{
     justify-content: space-around;
     text-align: center;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 .benefits--single{
     display: none;
@@ -104,10 +102,11 @@ header{
 }
 /*--------------------------------------------------------------*/
 
-/*--------------------------BOXQUIZZES--------------------------*/
+/*---------------------------FILTER-----------------------------*/
 .boxQuizzes{
     width: 100vw;
     max-width: 100%;
+    height: max-content;
     padding: 20px;
     background-image: url('../images/boxQuizzes.png');
     background-position: center;
@@ -115,16 +114,41 @@ header{
 }
 
 .filter{
-    width: 700px;
-    background-color: rgb(231, 231, 231);
+    width: 90%;
+    background-color: rgb(216, 216, 216);
     margin: 0 auto;
-    padding: 15px;
+    padding: 25px 15px;
     border-radius: 5px;
+    color: #353a3d;
 }
 
-.filter form{
+.formFilter{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter .formFilter--box{
     display: flex;
     justify-content: center;
+}
+
+.formFilter button{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #0782e6;
+    outline: 0;
+    border: 0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.formFilter button:active{
+    background-color: #135c97;
 }
 
 .filter h1{
@@ -136,8 +160,6 @@ header{
     overflow-y: hidden;
 }
 .filter h1 i{
-    position: relative;
-    top: 4px;
     animation: filterAnimation 0.2s infinite;
 }
 
@@ -161,5 +183,176 @@ header{
 
 .filter1{
     margin-right: 50px;
+}
+/*--------------------------------------------------------------*/
+
+/*---------------------------SEARCH-----------------------------*/
+.boxMainTitle{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #1768AC;
+    border-radius: 5px;
+}
+
+.boxMainTitle h1{
+    color: white;
+    font-weight: lighter;
+}
+
+.boxMainTitle h1 i{
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.boxSearch{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.iconInput{
+    position: relative;
+    top: 10px;
+    left: 25px;
+    color: #1768AC;
+}
+
+.boxSearch input{
+    width: 400px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+    color: #353a3d;
+}
+.boxSearch button{
+    background-color: #1768AC;
+    outline: 0;
+    border: 0;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boxSearch button:active{
+    background-color: #135c97;
+}
+/*--------------------------------------------------------------*/
+
+/*---------------------------QUIZZES----------------------------*/
+.quizSingleModel{
+    display: none;
+}
+.quizzes{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.quizSingle{
+    text-align: center;
+    max-width: 350px;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 20px 10px;
+}
+
+.quizSingle img{
+    width: 100%;
+    height: 200px;
+}
+
+.quizSingle h1{
+    font-weight: lighter;
+    margin-top: 10px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.quizSingle p{
+    padding: 10px;
+    font-size: 14px;
+    color: #575757;
+    font-family: 'Rubik', sans-serif;
+}
+
+.quizSingle button{
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #0782e6;
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+}
+.empty{
+    display: none;
+    color: rgb(235, 235, 235);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(151, 3, 3);
+    padding: 7px;
+}
+.empty i{
+    margin-right: 5px;
+}
+
+.loading{
+    width: 100%;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    background-color: rgb(107, 0, 194);
+    padding: 7px;
+}
+
+.loading i{
+    margin-right: 5px;
+    animation: loadAnimation 0.5s infinite;
+}
+
+@keyframes loadAnimation{
+    0%{
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+    }
+    20%{
+        -ms-transform: rotate(50deg); 
+        transform: rotate(50deg);
+    }
+    40%{
+        -ms-transform: rotate(100deg); 
+        transform: rotate(100deg);
+    }
+    50%{
+        -ms-transform: rotate(150deg); 
+        transform: rotate(150deg);
+    }
+    70%{
+        -ms-transform: rotate(200deg); 
+        transform: rotate(200deg);
+    }
+    80%{
+        -ms-transform: rotate(250deg); 
+        transform: rotate(250deg);
+    }
+    100%{
+        -ms-transform: rotate(300deg); 
+        transform: rotate(300deg);
+    }
 }
 /*--------------------------------------------------------------*/
