@@ -1,3 +1,6 @@
+*{
+    overflow-x: hidden;
+}
 /*----------------------------HEADER----------------------------*/
 header{
     width: 100vw;
@@ -60,6 +63,7 @@ header{
     background-image: url('../images/downArrow.png');
     background-position: center;
     background-size: 100% 100%;
+    cursor: pointer;
     animation: arrowAnimation 0.7s infinite;
 }
 
@@ -70,5 +74,32 @@ header{
     50%{
         bottom: 5%;
     }
+}
+/*--------------------------------------------------------------*/
+
+/*--------------------------BENIFITS----------------------------*/
+.benefits{
+    width: 100vw;
+    max-width: 100%;
+    height: 150px;
+    padding-top: 26px;
+    background: linear-gradient(#1D0F56, #082b58);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow-y: hidden;
+}
+.benefits--single{
+    display: none;
+}
+.benefits img{
+    width: 70px;
+    height: 70px;
+}
+.benefits h2{
+    font-weight: lighter;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 20px;
 }
 /*--------------------------------------------------------------*/
