@@ -302,7 +302,6 @@ header{
     font-size: 10px;
 }
 .empty{
-    display: none;
     color: rgb(235, 235, 235);
     width: 100%;
     text-align: center;
@@ -314,7 +313,6 @@ header{
 }
 
 .loading{
-    display: none;
     width: 100%;
     text-align: center;
     color: rgb(235, 235, 235);
