@@ -27,7 +27,7 @@ quizzes.map((item, index)=>{
     quizSingle.querySelector('p').innerText = item.description;
 
     quizSingle.addEventListener('click', ()=>{
-        sessionStorage.setItem('currentQuiz', item.id);
+        sessionStorage.setItem('currentQuiz', index);
         window.location.href = "http://127.0.0.1:5500/openQuiz.html";
     });
 

@@ -21,13 +21,17 @@ header{
 main{
     width: 100vw;
     max-width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     background-image: url('../images/quizOpenBanner.jpg');
     background-position: center;
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+}
+.modelToClone{
+    display: none;
 }
 .quiz{
     width: 700px;
@@ -104,6 +108,7 @@ main{
     margin-bottom: 10px;
     background-color: white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .answerSingle p:nth-of-type(1){
@@ -155,6 +160,7 @@ main{
 }
 .finish{
     background-color: #0980cf;
+    display: none;
 }
 /*--------------------------------------------------------------*/
 
