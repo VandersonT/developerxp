@@ -23,7 +23,7 @@ let quizzes = [
                     'Not a New',
                     'Nenhuma opção acima'
                 ],
-                rightAnswer: 0
+                rightAnswer: 1
             },
             {
                 question: 'Qual seria o resultado de 3 + 2 + ”7 ″?',

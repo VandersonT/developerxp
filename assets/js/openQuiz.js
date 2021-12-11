@@ -165,8 +165,20 @@ function checkResult(){
 }
 
 function showAnswersOnScreen(){
-    document.querySelectorAll('.boxAnswers .answerSingle')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.background = 'green';
-    document.querySelectorAll('.boxAnswers .answerSingle .ans')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.color = 'white';
+    document.querySelector('.result').style.display = 'block';
+    document.querySelectorAll('.boxAnswers .answerSingle')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.background = '#00f715';
+    document.querySelectorAll('.boxAnswers .answerSingle .ans')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.color = 'black';
+
+    if(quizzes[idQuiz].questions[currentQuestion].rightAnswer == selectedOptions[currentQuestion]){
+        document.querySelector('.result').classList.remove('wrong');
+        document.querySelector('.result').classList.add('correct');
+        document.querySelector('.result').innerText = 'Você acertou esta questão';
+    }else{
+        document.querySelector('.result').classList.remove('correct');
+        document.querySelector('.result').classList.add('wrong');
+        document.querySelector('.result').innerText = 'Você errou esta questão';
+    }
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
