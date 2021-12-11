@@ -114,6 +114,10 @@ header{
     padding-top: 100px;
 }
 
+.mark{
+    color: rgb(33, 175, 20)
+}
+
 .filter{
     width: 90%;
     background-color: rgb(216, 216, 216);
@@ -131,25 +135,6 @@ header{
 .filter .formFilter--box{
     display: flex;
     justify-content: center;
-}
-
-.formFilter button{
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 20px;
-    background-color: #0782e6;
-    outline: 0;
-    border: 0;
-    padding: 8px 10px;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-
-.formFilter button:active{
-    background-color: #135c97;
 }
 
 .filter h1{
@@ -208,45 +193,6 @@ header{
     top: 2px;
     margin-right: 5px;
     font-size: 18px;
-}
-
-.boxSearch{
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.iconInput{
-    position: relative;
-    top: 10px;
-    left: 25px;
-    color: #1768AC;
-}
-
-.boxSearch input{
-    width: 400px;
-    outline: 0;
-    border: 0;
-    border-radius: 4px;
-    padding: 10px;
-    padding-left: 30px;
-    font-size: 16px;
-    color: #353a3d;
-}
-.boxSearch button{
-    background-color: #1768AC;
-    outline: 0;
-    border: 0;
-    margin-left: 10px;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.boxSearch button:active{
-    background-color: #135c97;
 }
 /*--------------------------------------------------------------*/
 
