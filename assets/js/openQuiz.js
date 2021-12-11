@@ -6,7 +6,12 @@ let chronometer = setInterval(function(){
     
     if(secounds == 0 && minutes == 0){
         clearInterval(chronometer);
-        alert('acabour');
+        document.querySelector('.boxControls h2').innerText = 'Encerrado';
+        
+        
+        alert('acabou');
+
+
         return false;
     }
 
@@ -29,6 +34,8 @@ let currentQuestion = 0;
 let numberOfQuestions = quizzes[idQuiz].questions.length;
 let selectedOptions = [];
 let finished = false;
+let progressBar = 0;
+let percentageOfEachQuestion = 100 / numberOfQuestions;
 
 renderQuestion();
 
@@ -42,9 +49,11 @@ document.querySelector('.next').addEventListener('click', ()=>{
         document.querySelector('.next').style.display = 'none';
         document.querySelector('.finish').style.display = 'block';
     }
+
 });
 
 document.querySelector('.prev').addEventListener('click', ()=>{
+
     currentQuestion--;
     renderQuestion()
 
@@ -57,32 +66,36 @@ document.querySelector('.prev').addEventListener('click', ()=>{
         document.querySelector('.finish').style.display = 'none';
         document.querySelector('.next').style.display = 'block';
     }
+
 });
 
 document.querySelector('.finish').addEventListener('click', ()=>{
 
-    if(selectedOptions.length < numberOfQuestions){
-        alert('Você deve responder todas as questões para finalizar o quiz!');
-        return false;
-    }
-    
-    for(let i = 0; i < selectedOptions.length; i++){
-        if(selectedOptions[i] == null){
-            alert('Você deve responder todas as questões para finalizar o quiz!');
-            return false;
-        }
-    }
     if(!confirm('Você quer realmente finalizar este quiz?')){
         return false;
     }
 
+    clearInterval(chronometer);
+    document.querySelector('.boxControls h2').innerText = 'Encerrado';
+
     finished = true;
-    alert('finalizado bora verificar')
+    checkResult();
 });
 
+document.querySelector('.restart').addEventListener('click', ()=>{
+    location.reload();
+});
+
+document.querySelector('.return').addEventListener('click', ()=>{
+    if(!confirm('Se voltar perderá todo o progresso feito no teste! Tem certeza?')){
+        return false;
+    }
+    window.location.href = window.location.origin;
+});
 
 //FUNCTIONS
 function renderQuestion(){
+
     let numberOfAnswers = quizzes[idQuiz].questions[currentQuestion].options.length;
 
     //Remove all options from previous quiz, if any.
@@ -106,6 +119,13 @@ function renderQuestion(){
                 return false;
             }
             /***/
+            
+            /*Increase the percentage done, if it's new*/
+            if(!(selectedOptions[currentQuestion] >= 0)){
+                progressBar = progressBar + percentageOfEachQuestion;
+                document.querySelector('.progress').style.width = progressBar+'%';
+            }
+            /***/
 
             selectedOptions[currentQuestion] = i;
             for(let j = 0; j < numberOfAnswers; j++){
@@ -113,7 +133,7 @@ function renderQuestion(){
                 document.querySelectorAll('.boxAnswers .answerSingle')[j].style.background = 'white';
             }
             document.querySelectorAll('.boxAnswers .answerSingle')[i].style.background = '#292945';
-            document.querySelectorAll('.boxAnswers .answerSingle .ans')[i].style.color = 'white'
+            document.querySelectorAll('.boxAnswers .answerSingle .ans')[i].style.color = 'white';
         })
     }
     
@@ -121,6 +141,32 @@ function renderQuestion(){
         document.querySelectorAll('.boxAnswers .answerSingle')[selectedOptions[currentQuestion]].style.background = '#292945';
         document.querySelectorAll('.boxAnswers .answerSingle .ans')[selectedOptions[currentQuestion]].style.color = 'white'
     }
+
+    if(finished){
+        showAnswersOnScreen();
+    }
+}
+
+function checkResult(){
+    let hits = 0;
+    let mistakes = 0;
+    
+    for(let i = 0; i < quizzes[idQuiz].questions.length; i++){
+        if(quizzes[idQuiz].questions[i].rightAnswer == selectedOptions[i]){
+            hits++;
+        }else{
+            mistakes++;
+        }
+    }
+    console.log('Acertos: '+hits+' | Erros: '+mistakes);
+
+    showAnswersOnScreen();
+    
+}
+
+function showAnswersOnScreen(){
+    document.querySelectorAll('.boxAnswers .answerSingle')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.background = 'green';
+    document.querySelectorAll('.boxAnswers .answerSingle .ans')[quizzes[idQuiz].questions[currentQuestion].rightAnswer].style.color = 'white';
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/

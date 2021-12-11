@@ -13,7 +13,7 @@ let quizzes = [
                     '124',
                     '24'
                 ],
-                rightAnswer: 1
+                rightAnswer: 2
             },
             {
                 question: 'O que é NaN?',
