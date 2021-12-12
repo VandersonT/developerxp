@@ -132,6 +132,17 @@ header{
     flex-direction: column;
 }
 
+.formFilter--box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tecSingle{
+    margin: 8px;
+}
+
 .filter .formFilter--box{
     display: flex;
     justify-content: center;

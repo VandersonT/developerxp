@@ -5,7 +5,7 @@ document.querySelector('.downArrow').addEventListener('click', function(){
 });
 
 
-//Benefits animatio
+//Benefits animation
 window.addEventListener("scroll", function (event) {
     let scroll = this.scrollY;
     let benefitsSingle = document.querySelectorAll('.benefits--single');
@@ -26,7 +26,7 @@ quizzes.map((item, index)=>{
     quizSingle.querySelector('h1').innerText = item.name;
     quizSingle.querySelector('p').innerText = item.description;
 
-    quizSingle.addEventListener('click', ()=>{
+    quizSingle.querySelector('button').addEventListener('click', ()=>{
         sessionStorage.setItem('currentQuiz', index);
         window.location.href = "http://127.0.0.1:5500/openQuiz.html";
     });

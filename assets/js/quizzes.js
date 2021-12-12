@@ -1,3 +1,5 @@
+//Note: Each quiz must have at least 3 questions.
+
 let quizzes = [
     {
         id:1,
@@ -684,6 +686,60 @@ let quizzes = [
                 ],
                 rightAnswer: 1
             }
+        ]
+    },
+    {
+        id:3,
+        name:'Php',
+        description: 'Teste Agora os seus conhecimentos na linguagem de programação php.',
+        img: 'php.png',
+        questions:[
+            {
+                question: 'O que quer dizer a sigla php?',
+                options: [
+                    'Hyper Text Markup Language',
+                    'Não é uma sigla e sim o próprio nome',
+                    'Hyper Text Make Language',
+                    'Host Text Make Language'
+                ],
+                rightAnswer: 0
+            },
+        ]
+    },
+    {
+        id:4,
+        name:'Css',
+        description: 'Teste Agora os seus conhecimentos em css.',
+        img: 'css.png',
+        questions:[
+            {
+                question: 'O que quer dizer a sigla css?',
+                options: [
+                    'Hyper Text Markup Language',
+                    'Não é uma sigla e sim o próprio nome',
+                    'Hyper Text Make Language',
+                    'Host Text Make Language'
+                ],
+                rightAnswer: 0
+            },
+        ]
+    },
+    {
+        id:5,
+        name:'Sass',
+        description: 'Teste Agora os seus conhecimentos em css.',
+        img: 'sass.png',
+        questions:[
+            {
+                question: 'O que quer dizer a sigla css?',
+                options: [
+                    'Hyper Text Markup Language',
+                    'Não é uma sigla e sim o próprio nome',
+                    'Hyper Text Make Language',
+                    'Host Text Make Language'
+                ],
+                rightAnswer: 0
+            },
         ]
     },
 ];
