@@ -7,10 +7,10 @@ let chronometer = setInterval(function(){
     if(secounds == 0 && minutes == 0){
         clearInterval(chronometer);
         document.querySelector('.boxControls h2').innerText = 'Encerrado';
-        
-        
-        alert('acabou');
 
+        finished = true;
+        document.querySelector('.finish').style.display = 'none';
+        checkResult();
 
         return false;
     }
@@ -217,7 +217,7 @@ function showResultOnScreen(hits, mistakes){
         document.querySelector('.boxResults--title').innerText = "Boa";
         document.querySelector('.boxResults--title').style.background = '#1097cc';
         document.querySelector('.finalResult img').src = './assets/images/normal.png';
-        document.querySelector('.finalResult--messages h1').innerText = "Isso ae, você conseguiu se virar no quiz!";
+        document.querySelector('.finalResult--messages h1').innerText = "Você conseguiu se virar no quiz!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
     }
@@ -226,7 +226,7 @@ function showResultOnScreen(hits, mistakes){
         document.querySelector('.boxResults--title').innerText = "Não foi muito bom";
         document.querySelector('.boxResults--title').style.background = '#cc1010';
         document.querySelector('.finalResult img').src = './assets/images/bad.png';
-        document.querySelector('.finalResult--messages h1').innerText = "Você não conseguiu ir muito bem! estude um pouco mais!";
+        document.querySelector('.finalResult--messages h1').innerText = "Você não conseguiu ir muito bem!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
     }
@@ -235,7 +235,7 @@ function showResultOnScreen(hits, mistakes){
         document.querySelector('.boxResults--title').innerText = "Nheee";
         document.querySelector('.boxResults--title').style.background = '#cc1010';
         document.querySelector('.finalResult img').src = './assets/images/veryBad.png';
-        document.querySelector('.finalResult--messages h1').innerText = "Você errou bastate coisa, estude mais um pouquinho!";
+        document.querySelector('.finalResult--messages h1').innerText = "Você errou bastate coisa!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
     }
