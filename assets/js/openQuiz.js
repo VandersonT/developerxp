@@ -47,7 +47,9 @@ document.querySelector('.next').addEventListener('click', ()=>{
 
     if(currentQuestion == numberOfQuestions-1){
         document.querySelector('.next').style.display = 'none';
-        document.querySelector('.finish').style.display = 'block';
+        if(!finished){
+            document.querySelector('.finish').style.display = 'block';
+        }
     }
 
 });
@@ -78,7 +80,10 @@ document.querySelector('.finish').addEventListener('click', ()=>{
     clearInterval(chronometer);
     document.querySelector('.boxControls h2').innerText = 'Encerrado';
 
+
+
     finished = true;
+    document.querySelector('.finish').style.display = 'none';
     checkResult();
 });
 
@@ -88,6 +93,13 @@ document.querySelector('.restart').addEventListener('click', ()=>{
 
 document.querySelector('.return').addEventListener('click', ()=>{
     if(!confirm('Se voltar perderá todo o progresso feito no teste! Tem certeza?')){
+        return false;
+    }
+    window.location.href = window.location.origin;
+});
+
+document.querySelector('.logo').addEventListener('click', ()=>{
+    if(!confirm('Você quer realmente voltar para a tela inicial? Perderá todo o progresso feito neste quiz!')){
         return false;
     }
     window.location.href = window.location.origin;
@@ -158,9 +170,9 @@ function checkResult(){
             mistakes++;
         }
     }
-    console.log('Acertos: '+hits+' | Erros: '+mistakes);
 
-    showAnswersOnScreen();
+    showAnswersOnScreen(); 
+    showResultOnScreen(hits, mistakes);
     
 }
 
@@ -181,4 +193,58 @@ function showAnswersOnScreen(){
 
 }
 
+function showResultOnScreen(hits, mistakes){
+    
+    if(hits >= (numberOfQuestions * 90 / 100)){
+        document.querySelector('.boxResults--title').innerText = "PARABÉNS";
+        document.querySelector('.boxResults--title').style.background = 'green';
+        document.querySelector('.finalResult img').src = './assets/images/veryGood.png';
+        document.querySelector('.finalResult--messages h1').innerText = "Uau! Você foi incrivelmente bem!";
+        document.querySelector('.hitsNumber').innerText = hits;
+        document.querySelector('.mistakesNumber').innerText = mistakes;
+    }
+
+    if(hits >= (numberOfQuestions * 70 / 100) && hits < (numberOfQuestions * 90 / 100)){
+        document.querySelector('.boxResults--title').innerText = "PARABÉNS";
+        document.querySelector('.boxResults--title').style.background = 'green';
+        document.querySelector('.finalResult img').src = './assets/images/good.png';
+        document.querySelector('.finalResult--messages h1').innerText = "Nice! Você foi muito bem!";
+        document.querySelector('.hitsNumber').innerText = hits;
+        document.querySelector('.mistakesNumber').innerText = mistakes;
+    }
+
+    if(hits >= (numberOfQuestions * 40 / 100) && hits < (numberOfQuestions * 70 / 100)){
+        document.querySelector('.boxResults--title').innerText = "Boa";
+        document.querySelector('.boxResults--title').style.background = '#1097cc';
+        document.querySelector('.finalResult img').src = './assets/images/normal.png';
+        document.querySelector('.finalResult--messages h1').innerText = "Isso ae, você conseguiu se virar no quiz!";
+        document.querySelector('.hitsNumber').innerText = hits;
+        document.querySelector('.mistakesNumber').innerText = mistakes;
+    }
+
+    if(hits >= (numberOfQuestions * 20 / 100) && hits < (numberOfQuestions * 40 / 100)){
+        document.querySelector('.boxResults--title').innerText = "Não foi muito bom";
+        document.querySelector('.boxResults--title').style.background = '#cc1010';
+        document.querySelector('.finalResult img').src = './assets/images/bad.png';
+        document.querySelector('.finalResult--messages h1').innerText = "Você não conseguiu ir muito bem! estude um pouco mais!";
+        document.querySelector('.hitsNumber').innerText = hits;
+        document.querySelector('.mistakesNumber').innerText = mistakes;
+    }
+
+    if(hits >= 0 && hits < (numberOfQuestions * 20 / 100)){
+        document.querySelector('.boxResults--title').innerText = "Nheee";
+        document.querySelector('.boxResults--title').style.background = '#cc1010';
+        document.querySelector('.finalResult img').src = './assets/images/veryBad.png';
+        document.querySelector('.finalResult--messages h1').innerText = "Você errou bastate coisa, estude mais um pouquinho!";
+        document.querySelector('.hitsNumber').innerText = hits;
+        document.querySelector('.mistakesNumber').innerText = mistakes;
+    }
+
+    document.querySelector('.darkScreen').style.display = 'flex';
+
+}
+
+document.querySelector('.closeResults').addEventListener('click', function(){
+    document.querySelector('.darkScreen').style.display = 'none';
+});
 /*------------------------------------------------------------------------------------------------------------------------------*/
