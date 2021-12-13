@@ -907,5 +907,233 @@ let quizzes = [
                 rightAnswer: 0
             },
         ] 
+    },
+    {
+        id:3,
+        name:'Css',
+        description: 'Teste Agora os seus conhecimentos em css.',
+        img: 'css.png',
+        questions:[
+            {
+                question: 'O que CSS significa?',
+                options: [
+                    'Colorful Style Sheets',
+                    'Computer Style Sheets',
+                    'Creative Style Sheets',
+                    'Cascading Style Sheets'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é o HTML correto para se referir a uma folha de estilo externa?',
+                options: [
+                    '<stylesheet>mystyle.css</stylesheet>',
+                    '<style src="mystyle.css">',
+                    'link rel="stylesheet" type="text/css" href="mystyle.css"'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Onde em um documento HTML é o local correto para se referir a uma folha de estilo externa?',
+                options: [
+                    'At the end the document',
+                    'In the <head> section',
+                    'In the <body> section'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual tag HTML é usada para definir uma folha de estilo interna?',
+                options: [
+                    '<script>',
+                    '<style>',
+                    'In the <body> section'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual atributo HTML é usado para definir estilos embutidos?',
+                options: [
+                    'style',
+                    'styles',
+                    'font',
+                    'class'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é a sintaxe CSS correta?',
+                options: [
+                    '{body:color=black;}',
+                    '{body;color:black;}',
+                    'body:color=black;',
+                    'body {color: black;}'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Como você insere um comentário em um arquivo CSS?',
+                options: [
+                    '//this is a comment',
+                    '"this is a comment"',
+                    '/*this is a comment*/',
+                    '//this is a comment//'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual propriedade é usada para alterar a cor de fundo?',
+                options: [
+                    'bgcolor',
+                    'background-color',
+                    'color'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Como você adiciona uma cor de fundo para todos os elementos <h1>?',
+                options: [
+                    'h1.all{background-color: #FFFFFF;}',
+                    'h1 {background-color: #FFFFFF;}',
+                    'all.h1{background-color: #FFFFFF;}'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual propriedade CSS é usada para alterar a cor do texto de um elemento?',
+                options: [
+                    'fgcolor',
+                    'text-color',
+                    'color'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual propriedade CSS controla o tamanho do texto?',
+                options: [
+                    'font-size',
+                    'font-style',
+                    'text-style',
+                    'text-size'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é a sintaxe CSS correta para colocar todos os elementos <p> em negrito?',
+                options: [
+                    'p{text-size:bold}',
+                    '<p style="font-size:bold;">',
+                    '<p style="text-size:bold;">',
+                    'p{font-weight:bold}'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Como você exibe hiperlinks sem sublinhado?',
+                options: [
+                    'a{text-decoration:no-underline;}',
+                    'a{underline:none;}',
+                    'a{decoration:no-underline;}',
+                    'a{text-decoration:none;}'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Como você faz com que cada palavra em um texto comece com uma letra maiúscula?',
+                options: [
+                    'transform:capitalize',
+                    'text-style:capitalize',
+                    'text-transform:capitalize',
+                    'Você não pode fazer isso com css'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual propriedade é usada para alterar a fonte de um elemento?',
+                options: [
+                    'font-style',
+                    'font-family',
+                    'font-css',
+                    'font-weight'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Como você deixa o texto em negrito?',
+                options: [
+                    'font-weight:bold;',
+                    'font:bold;',
+                    'style:css;',
+                    'font-family:bold;'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Como você exibe uma borda como esta: A borda superior = 10 pixels | A borda inferior = 5 pixels | A borda esquerda = 20 pixels | A borda direita = 1 pixel?',
+                options: [
+                    'border-width: 10px 5px 20px 1px;',
+                    'border-width:5px 20px 10px 1px;',
+                    'border-width:10px 20px 5px 1px;',
+                    'border-width:10px 1px 5px 20px;'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual propriedade é usada para alterar a margem esquerda de um elemento?',
+                options: [
+                    'padding-left',
+                    'indent',
+                    'margin-left'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Como você seleciona um elemento com id "demo"?',
+                options: [
+                    '#demo',
+                    '.demo',
+                    '*demo',
+                    'demo'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Como você seleciona elementos com o nome de classe "teste"?',
+                options: [
+                    '#teste',
+                    '.teste',
+                    '*teste',
+                    'teste'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Como você seleciona todos os elementos p dentro de um elemento div?',
+                options: [
+                    'div.p',
+                    'div + p',
+                    'p div',
+                    'div p'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Ao usar a propriedade padding; você tem permissão para usar valores negativos?',
+                options: [
+                    'Sim',
+                    'Não'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Como você faz uma lista que lista seus itens com quadrados?',
+                options: [
+                    'list-style-type:square',
+                    'list-type: square',
+                    'list: square'
+                ],
+                rightAnswer: 0
+            },
+        ]
     }
 ];
