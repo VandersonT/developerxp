@@ -22,7 +22,7 @@ window.addEventListener("scroll", function (event) {
 quizzes.map((item, index)=>{
     let quizSingle = document.querySelector('.quizSingleModel .quizSingle').cloneNode(true);
 
-    quizSingle.querySelector('img').src = "./assets/images/"+item.img;
+    quizSingle.querySelector('img').src = "./assets/images/quizImages/"+item.img;
     quizSingle.querySelector('h1').innerText = item.name;
     quizSingle.querySelector('p').innerText = item.description;
 

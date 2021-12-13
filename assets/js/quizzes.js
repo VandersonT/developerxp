@@ -695,51 +695,217 @@ let quizzes = [
         img: 'php.png',
         questions:[
             {
-                question: 'O que quer dizer a sigla php?',
+                question: 'O que PHP significa?',
                 options: [
-                    'Hyper Text Markup Language',
-                    'Não é uma sigla e sim o próprio nome',
-                    'Hyper Text Make Language',
-                    'Host Text Make Language'
+                    'Private Home Page',
+                    'PHP: HyperText Preprocessor',
+                    'Personal Hypertext Processor',
                 ],
-                rightAnswer: 0
+                rightAnswer: 1
             },
-        ]
-    },
-    {
-        id:4,
-        name:'Css',
-        description: 'Teste Agora os seus conhecimentos em css.',
-        img: 'css.png',
-        questions:[
             {
-                question: 'O que quer dizer a sigla css?',
+                question: 'Os scripts de servidor PHP são cercados por delimitadores, quais?',
                 options: [
-                    'Hyper Text Markup Language',
-                    'Não é uma sigla e sim o próprio nome',
-                    'Hyper Text Make Language',
-                    'Host Text Make Language'
+                    '<?php...</?>',
+                    '<&>...</&>',
+                    '<script></script>',
+                    '<?php...?>',
                 ],
-                rightAnswer: 0
+                rightAnswer: 3
             },
-        ]
-    },
-    {
-        id:5,
-        name:'Sass',
-        description: 'Teste Agora os seus conhecimentos em css.',
-        img: 'sass.png',
-        questions:[
             {
-                question: 'O que quer dizer a sigla css?',
+                question: 'Como você escreve "Hello World" em PHP?',
                 options: [
-                    'Hyper Text Markup Language',
-                    'Não é uma sigla e sim o próprio nome',
-                    'Hyper Text Make Language',
-                    'Host Text Make Language'
+                    '"Hellow World"',
+                    'echo "Hellow World"',
+                    'Document.Write("Hellow World")',
+                    'print("Hellow World")',
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Todas as variáveis ​​em PHP começam com qual símbolo?',
+                options: [
+                    '&',
+                    '$',
+                    '!',
+                    '?',
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é a maneira correta de terminar uma instrução PHP?',
+                options: [
+                    'New line',
+                    '</php>',
+                    '.',
+                    ';',
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'A sintaxe do PHP é mais semelhante a:',
+                options: [
+                    'Perl and C',
+                    'JavaScript',
+                    'VBScript',
+                    'Nenhuma',
                 ],
                 rightAnswer: 0
             },
-        ]
-    },
+            {
+                question: 'Como você obtém informações de um formulário enviado usando o método "get"?',
+                options: [
+                    'Request.QueryString;',
+                    'Request.Form',
+                    '$_GET[];'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Ao usar o método POST, as variáveis ​​são exibidas no URL:',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'No PHP, você pode usar aspas simples e aspas duplas para strings:',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é a maneira correta de incluir o arquivo "time.inc"?',
+                options: [
+                    '<!--include file="time.inc"-->',
+                    '<?php include:"time.inc";',
+                    '<?php include "time.inc"; ?>',
+                    '<?php include file="time.inc";'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual é a maneira correta de criar uma função em PHP?',
+                options: [
+                    'create myFunction()',
+                    'new_function myFunction()',
+                    'function myFunction()'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual é a maneira correta de abrir o arquivo "time.txt" como legível?',
+                options: [
+                    'open("time.txt", "read")',
+                    'open("time.txt")',
+                    'fopen("time.txt", "r+")',
+                    'fopen("time.txt", "r")'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é a maneira correta de adicionar 1 à variável $ count?',
+                options: [
+                    '++count',
+                    '$count =+ 1',
+                    '$count++;',
+                    'count++;'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual é a maneira correta de adicionar um comentário em PHP?',
+                options: [
+                    '<comment>..</comment>',
+                    '/*...*/',
+                    '<!--...-->',
+                    '*/.../*'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'As funções die () e exit () fazem exatamente a mesma coisa.',
+                options: [
+                    'Verdade',
+                    'Falso'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual dessas variáveis ​​tem um nome ilegal?',
+                options: [
+                    '$my-var',
+                    '$myVar',
+                    '$my_var'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Como você cria um cookie em PHP?',
+                options: [
+                    'createcookie',
+                    'makecookie',
+                    'setcookie'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Como você cria um array em PHP?',
+                options: [
+                    '$cars = array["Volvo", "BMW", "Toyota"]',
+                    '$cars = "Volvo", "BMW", "Toyota"',
+                    '$cars = array("Volvo", "BMW", "Toyota")'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'A instrução if é usada para executar algum código apenas se uma condição especificada for verdadeira',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual operador é usado para verificar se dois valores são iguais e do mesmo tipo de dados?',
+                options: [
+                    '===',
+                    '=',
+                    '==',
+                    '!='
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual variável superglobal contém informações sobre cabeçalhos, caminhos e locais de script?',
+                options: [
+                    '$_GET',
+                    '$_SERVER',
+                    '$SESSION',
+                    '$ GLOBALS'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'O PHP pode ser executado no Microsoft Windows IIS (Internet Information Server):',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'No PHP, a única forma de produzir texto é com echo.',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 0
+            },
+        ] 
+    }
 ];

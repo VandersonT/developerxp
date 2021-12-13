@@ -120,7 +120,7 @@ header{
 
 .filter{
     width: 90%;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
     padding: 25px 15px;
     border-radius: 5px;
@@ -216,12 +216,13 @@ header{
     margin: 0 auto;
     margin-top: 40px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 50px;
 }
 .quizSingle{
     text-align: center;
-    max-width: 350px;
+    width: 350px;
     background-color: white;
     padding-bottom: 30px;
     margin: 20px 10px;
