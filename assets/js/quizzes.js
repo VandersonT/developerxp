@@ -4,7 +4,7 @@ let quizzes = [
     {
         id:1,
         name:'JavaScript',
-        description: 'Teste Agora os seus conhecimentos na linguagem de programação javaScript.',
+        description: 'Teste agora os seus conhecimentos na linguagem de programação javaScript.',
         img: 'javaScript.jpg',
         questions:[
             {
@@ -264,7 +264,7 @@ let quizzes = [
     {
         id:2,
         name:'Html',
-        description: 'Teste Agora os seus conhecimentos na linguagem de marcação html.',
+        description: 'Teste agora os seus conhecimentos na linguagem de marcação html.',
         img: 'html.jpg',
         questions:[
             {
@@ -691,7 +691,7 @@ let quizzes = [
     {
         id:3,
         name:'Php',
-        description: 'Teste Agora os seus conhecimentos na linguagem de programação php.',
+        description: 'Teste agora os seus conhecimentos na linguagem de programação php.',
         img: 'php.png',
         questions:[
             {
@@ -909,9 +909,9 @@ let quizzes = [
         ] 
     },
     {
-        id:3,
+        id:4,
         name:'Css',
-        description: 'Teste Agora os seus conhecimentos em css.',
+        description: 'Teste agora os seus conhecimentos em css.',
         img: 'css.png',
         questions:[
             {
@@ -1133,6 +1133,996 @@ let quizzes = [
                     'list: square'
                 ],
                 rightAnswer: 0
+            },
+        ]
+    },
+    {
+        id:5,
+        name:'Vue.js',
+        description: 'Teste agora os seus conhecimentos com o framework Javascript vue.js.',
+        img: 'vue.jpg',
+        questions:[
+            {
+                question: 'O que é VueJS?',
+                options: [
+                    'Uma biblioteca',
+                    'Uma estrutura',
+                    'Uma extensão HTML',
+                    'Um banco de dados'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O que é uma instância Vue?',
+                options: [
+                    'É o ViewModel do padrão MVVM que Vue segue',
+                    'É a estrutura definitiva',
+                    'É um padrão Vue baseado em xml',
+                    'Uma classe'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Os componentes do Vue são instâncias reutilizáveis?',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'O que são props',
+                options: [
+                    'São atributos fixos já registrados',
+                    'São components que você cria no vue.js',
+                    'São atributos personalizados que você pode registrar em um componente.',
+                    'São as variaveis do vue.js'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Vue.js é uma aplicação SPA',
+                options: [
+                    'Sim',
+                    'Não'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O que é uma aplicação SPA?',
+                options: [
+                    'É uma aplicação com inumeras páginas',
+                    'É uma aplicação javaScript normal',
+                    'É uma aplicação de página unica.',
+                    'Nenhuma das opções'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Vue.js não é um framework javascript progressivo! Essa afirmação é:',
+                options: [
+                    'Verdade',
+                    'falso'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'O que é framework Javascript progressivo?',
+                options: [
+                    'Que pode ser criado de um jeito muito mais pratico',
+                    'Que pode ser conectado em um pedaço de uma aplicação server-side que precisa otimizar a UI.'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual opção só possui as vantagens do vue.js',
+                options: [
+                    'Acessivel, Versatil, Progressivo',
+                    'Progressivo, Excesso de flexibilidade, rapido',
+                    'Acessivel, Excelente desempenho, Não Progressivo'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O que significa SPA?',
+                options: [
+                    'Same Page Application',
+                    'Single Pagination App',
+                    'Single Page Application',
+                    'Same Page App',
+                ],
+                rightAnswer: 2
+            }
+        ]
+    },
+    {
+        id:6,
+        name:'Bootstrap',
+        description: 'Teste agora os seus conhecimentos com bootstrap.',
+        img: 'bootstrap.png',
+        questions:[
+            {
+                question: 'O Bootstrap 3 prioriza os dispositivos móveis.',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual classe fornece um contêiner de largura fixa responsivo?',
+                options: [
+                    '.container-fluid',
+                    '.container-fixed',
+                    '.recipiente '
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual classe fornece um contêiner de largura total, abrangendo toda a largura da janela de visualização?',
+                options: [
+                    '.container-fluid',
+                    '.container-fixed',
+                    '.recipiente '
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O sistema de grade Bootstrap é baseado em quantas colunas?',
+                options: [
+                    '12',
+                    '9',
+                    '3',
+                    '6'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe adiciona listras de zebra a uma mesa?',
+                options: [
+                    '.table-zebra',
+                    '.table-striped  ',
+                    '.even and .odd',
+                    '.table-bordered'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual classe molda uma imagem em um círculo?',
+                options: [
+                    '.img-circle',
+                    '.img-round',
+                    '.img-thumbnail',
+                    '.img-rounded'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe é usada para criar uma grande caixa para chamar atenção extra?',
+                options: [
+                    '.jumbotron',
+                    '.bigbox',
+                    '.container'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe de botão é usada para criar um botão grande?',
+                options: [
+                    '.btn-large',
+                    '.btn-l',
+                    '.btn-xl',
+                    '.btn-lg'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual classe é usada para criar um grupo de botões?',
+                options: [
+                    '.button-group',
+                    '.group-btn',
+                    '.group-button',
+                    '.btn-group'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Como você pode inserir um ícone de pesquisa?',
+                options: [
+                    '<span class="glyph glyph-search"></span>',
+                    '<span class="glyphicon-search"></span>',
+                    '<span class="glyphicon glyphicon-search"></span>',
+                    '<span class="glyphicon search"></span>'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual classe é usada para criar um crachá?',
+                options: [
+                    '.badge',
+                    '.flag',
+                    '.tag',
+                    '.label'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe é usada para criar uma paginação básica?',
+                options: [
+                    '.pagination',
+                    '.page',
+                    '.navigation',
+                    '.pages'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe é usada para criar um grupo de lista básico?',
+                options: [
+                    '.grouped-list',
+                    '.group-list',
+                    '.list-group'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual classe adiciona um título a um painel?',
+                options: [
+                    '.panel-heading',
+                    '.panel-head',
+                    '.panel-header',
+                    '.panel-footer'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe indica um menu suspenso?',
+                options: [
+                    '.select',
+                    '.dropdown',
+                    '.dropdown-list'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Uma guia de navegação padrão é criada com:',
+                options: [
+                    '<ul class="nav tabs">',
+                    '<ul class="nav nav-navbar">',
+                    '<ul class="nav nav-tabs">',
+                    '<ul class="navigation-tabs">'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Uma barra de navegação padrão é criada com:',
+                options: [
+                    '<nav class="navbar default-navbar">',
+                    '<nav class="navbar navbar-default">',
+                    '<nav class="nav navbar">',
+                    '<nav class="navigationbar navbar-default">'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual classe é usada para criar uma barra de navegação preta?',
+                options: [
+                    '.navbar-dark',
+                    '.navbar-default',
+                    '.navbar-inverse',
+                    '.navbar-black'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual plugin é usado para percorrer os elementos, como uma apresentação de slides?',
+                options: [
+                    'Scrollspy',
+                    'Orbit',
+                    'Slideshow',
+                    'Carousel'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual plugin é usado para criar uma janela modal?',
+                options: [
+                    'Dialog Box',
+                    'Window',
+                    'Modal',
+                    'Popup'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual plugin é usado para criar uma dica de ferramenta?',
+                options: [
+                    'Dialog Box',
+                    'Tooltip',
+                    'Popup',
+                    'Modal'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual classe contextual indica uma ação bem-sucedida ou positiva?',
+                options: [
+                    '.text-success',
+                    '.text-warning',
+                    '.text-info',
+                    '.text-primary'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual classe contextual indica uma ação perigosa ou potencialmente negativa?',
+                options: [
+                    '.text-warning',
+                    '.text-danger',
+                    '.text-info',
+                    '.text-primary'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual classe indica texto em maiúsculas?',
+                options: [
+                    '.text-capitalize',
+                    '.ucase',
+                    '.uppercase',
+                    '.text-uppercase'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'O sistema de grade Bootstrap funciona em vários dispositivos.',
+                options: [
+                    'Falso',
+                    'Verdade'
+                ],
+                rightAnswer: 1
+            },
+        ]
+    },
+    {
+        id:7,
+        name:'Sql',
+        description: 'Teste agora os seus conhecimentos em sql.',
+        img: 'sql.png',
+        questions:[
+            {
+                question: 'O que SQL significa?',
+                options: [
+                    'Structure Query Language',
+                    'Strong Question Language',
+                    'Structured Question Language'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual instrução SQL é usada para extrair dados de um banco de dados?',
+                options: [
+                    'OPEN',
+                    'GET',
+                    'EXTRACT',
+                    'SELECT'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual instrução SQL é usada para atualizar dados em um banco de dados?',
+                options: [
+                    'SAVE',
+                    'SAVE AS',
+                    'MODIFY',
+                    'UPDATE'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual instrução SQL é usada para excluir dados de um banco de dados?',
+                options: [
+                    'REMOVE',
+                    'COLLAPSE',
+                    'DELETE',
+                    'CLEAR'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual instrução SQL é usada para inserir novos dados em um banco de dados?',
+                options: [
+                    'INSERT NEW',
+                    'ADD NEW',
+                    'ADD RECORD',
+                    'INSERT INTO'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Com o SQL, como você seleciona uma coluna chamada "FirstName" de uma tabela chamada "Pessoas"?',
+                options: [
+                    'SELECT Persons.FirstName',
+                    'SELECT FirstName FROM Persons',
+                    'EXTRACT FirstName FROM Persons'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o SQL, como você seleciona todas as colunas de uma tabela chamada "Pessoas"?',
+                options: [
+                    'SELECT * FROM Persons',
+                    'SELECT Persons',
+                    'SELECT *.Persons',
+                    'SELECT [all] FROM Persons'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o valor da coluna "Nome" é "Pedro"?',
+                options: [
+                    'SELECT [all] FROM Persons WHERE FirstName LIKE "Peter"',
+                    'SELECT * FROM Persons WHERE FirstName="Peter"',
+                    'SELECT * FROM Persons WHERE FirstName<>"Peter"',
+                    'SELECT [all] FROM Persons WHERE FirstName="Peter"'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o valor da coluna "FirstName" começa com um "a"?',
+                options: [
+                    'SELECT * FROM Persons WHERE FirstName LIKE "a%"',
+                    'SELECT * FROM Persons WHERE FirstName LIKE "%a"',
+                    'SELECT * FROM Persons WHERE FirstName="a"',
+                    'SELECT * FROM Persons WHERE FirstName="%a%"'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O operador OR exibe um registro se QUALQUER condição listada for verdadeira. O operador AND exibe um registro se TODAS as condições listadas forem verdadeiras',
+                options: [
+                    'Falso',
+                    'Verdadeiro'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "Nome" é "Pedro" e o "Sobrenome" é "Jackson"?',
+                options: [
+                    'SELECT FirstName="Peter", LastName="Jackson" FROM Persons',
+                    'SELECT * FROM Persons WHERE FirstName="Peter" AND LastName="Jackson"',
+                    'SELECT * FROM Persons WHERE FirstName<>"Peter" AND LastName<>"Jackson"'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o SQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "Sobrenome" está alfabeticamente entre (e incluindo) "Hansen" e "Pettersen"?',
+                options: [
+                    'SELECT LastName>"Hansen" AND LastName<"Pettersen" FROM Persons',
+                    'SELECT * FROM Persons WHERE LastName>"Hansen" AND LastName<"Pettersen"',
+                    'SELECT * FROM Persons WHERE LastName BETWEEN "Hansen" AND "Pettersen"'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual instrução SQL é usada para retornar apenas valores diferentes?',
+                options: [
+                    'SELECT DIFFERENT',
+                    'SELECT UNIQ',
+                    'SELECT DISTINCT'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual palavra-chave SQL é usada para classificar o conjunto de resultados?',
+                options: [
+                    'SORT',
+                    'SORT BY',
+                    'ORDER BY',
+                    'ORDER'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Com o SQL, como você pode retornar todos os registros de uma tabela chamada "Pessoas" classificados em ordem decrescente por "Nome"?',
+                options: [
+                    'SELECT * FROM Persons SORT "FirstName" DESC',
+                    'SELECT * FROM Persons ORDER FirstName DESC',
+                    'SELECT * FROM Persons SORT BY "FirstName" DESC',
+                    'SELECT * FROM Persons ORDER BY FirstName DESC'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Com o SQL, como você pode inserir um novo registro na tabela "Pessoas"?',
+                options: [
+                    'INSERT INTO Persons VALUES ("Jimmy", "Jackson")',
+                    'INSERT VALUES ("Jimmy", "Jackson") INTO Persons',
+                    'INSERT ("Jimmy", "Jackson") INTO Person'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com SQL, como você pode inserir "Olsen" como o "Sobrenome" na tabela "Pessoas"?',
+                options: [
+                    'INSERT ("Olsen") INTO Persons (LastName)',
+                    'INSERT INTO Persons ("Olsen") INTO LastName',
+                    'INSERT INTO Persons (LastName) VALUES ("Olsen")'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Como você pode mudar "Hansen" para "Nilsen" na coluna "Sobrenome" na tabela Pessoas?',
+                options: [
+                    'UPDATE Persons SET LastName="Nilsen" WHERE LastName="Hansen"',
+                    'MODIFY Persons SET LastName="Nilsen" WHERE LastName="Hansen"',
+                    'MODIFY Persons SET LastName="Hansen" INTO LastName="Nilsen"',
+                    'UPDATE Persons SET LastName="Hansen" INTO LastName="Nilsen"'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com SQL, como você pode deletar os registros onde o "FirstName" é "Peter" na Tabela de Pessoas?',
+                options: [
+                    'DELETE FirstName="Peter" FROM Persons',
+                    'DELETE FROM Persons WHERE FirstName = "Peter"',
+                    'DELETE ROW FirstName="Peter" FROM Persons'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o SQL, como você pode retornar o número de registros na tabela "Pessoas"?',
+                options: [
+                    'SELECT LEN(*) FROM Persons',
+                    'SELECT COLUMNS(*) FROM Persons',
+                    'SELECT COUNT(*) FROM Persons',
+                    'SELECT NO(*) FROM Persons'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual é o tipo mais comum de junção?',
+                options: [
+                    'JOINED',
+                    'INSIDE JO',
+                    'INNER JOIN',
+                    'JOINED TABLE'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual operador é usado para selecionar valores dentro de um intervalo?',
+                options: [
+                    'RANGE',
+                    'BETWEEN',
+                    'WITHIN'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'A restrição NOT NULL força uma coluna a não aceitar valores NULL.',
+                options: [
+                    'Falso',
+                    'Verdadeiro'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual operador é usado para pesquisar um padrão especificado em uma coluna?',
+                options: [
+                    'LIKE',
+                    'GET',
+                    'FROM'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual instrução SQL é usada para criar uma tabela de banco de dados chamada "Clientes"?',
+                options: [
+                    'CREATE DB Customers',
+                    'CREATE TABLE Customers',
+                    'CREATE DATABASE TABLE Customers',
+                    'CREATE DATABASE TAB Customers'
+                ],
+                rightAnswer: 1
+            },
+        ]
+    },
+    {
+        id:8,
+        name:'Git',
+        description: 'Teste agora os seus conhecimentos em git.',
+        img: 'git.png',
+        questions:[
+            {
+                question: 'O que é Git?',
+                options: [
+                    'Um sistema de controle de versão.',
+                    'Um apelido para GitHub.',
+                    'Uma plataforma de repositório remoto.',
+                    'Uma linguagem de programação.'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Git é igual ao GitHub.',
+                options: [
+                    'Verdadeiro',
+                    'Falso'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para obter a versão instalada do Git?',
+                options: [
+                    'getGitVersion',
+                    'git help version',
+                    'git --version',
+                    'gitVersion'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual opção você deve usar para definir o nome de usuário padrão para cada repositório em seu computador?',
+                options: [
+                    'Não há necessidade de especificar, esse é o padrão.',
+                    '--all',
+                    '--A',
+                    '--global'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é o comando para definir o e-mail do usuário para o repositório atual?',
+                options: [
+                    'git config user.email',
+                    'git email.user',
+                    'git config emai'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é o comando para adicionar todos os arquivos e alterações da pasta atual ao ambiente de teste do repositório Git?',
+                options: [
+                    'git add --all',
+                    'git add',
+                    'git add --files'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é o comando para obter o status atual do repositório Git?',
+                options: [
+                    'git config --status',
+                    'git status',
+                    'git getStatus',
+                    '--status'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para inicializar o Git no repositório atual?',
+                options: [
+                    'start git',
+                    'git star',
+                    'initialize git',
+                    'git init'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Git adiciona automaticamente novos arquivos ao repositório e começa a rastreá-los.',
+                options: [
+                    'Falso',
+                    'Verdadeiro'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'O histórico de commit do Git é excluído automaticamente:',
+                options: [
+                    'Todo ano.',
+                    'O histórico de commits nunca é excluído automaticamente.',
+                    'Todo mês.',
+                    'A cada 2 semanas.'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para confirmar as mudanças em estágios para o repositório Git?',
+                options: [
+                    'git save',
+                    'git com',
+                    'git snapshot',
+                    'git commit'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é o comando para confirmar com a mensagem "Novo email":',
+                options: [
+                    'git commit -mess "New email"',
+                    'git commit -m "New email"',
+                    'git commit -log "New email"',
+                    'git commit message "New email"'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para ver o histórico de commits para o repositório?',
+                options: [
+                    'git commits',
+                    'git history',
+                    'git --full-log',
+                    'git log'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é o comando para ver as opções disponíveis para o comando commit?',
+                options: [
+                    'git commitHelp',
+                    'gitHelp commit',
+                    'git commit readme',
+                    'git commit -help'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'No Git, um branch é:',
+                options: [
+                    'Nada, é uma palavra sem sentido.',
+                    'Uma versão separada do repositório principal.',
+                    'Uma parte secreta da configuração do Git.'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para criar um novo branch chamado "new-email"?',
+                options: [
+                    'git branch new-email',
+                    'git branch new "new-email',
+                    'git add branch "new-email"',
+                    'git newBranch "new-email"'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é o comando para mover para o branch chamado "new-email"?',
+                options: [
+                    'git branch new-email',
+                    'git checkout branch new-email',
+                    'git branch -move new-email',
+                    'git checkout new-email'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual é a opção, ao mover para uma ramificação, criar a ramificação se ela não existir?',
+                options: [
+                    '-new',
+                    '-b',
+                    '-all',
+                    '-newbranch'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual é o comando para mesclar o branch atual com o branch "new-email"?',
+                options: [
+                    'git merge new-email',
+                    'git add new-email',
+                    'git commit -merge new-email'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual é o comando para deletar o branch "new-email"',
+                options: [
+                    'git delete branch new-email',
+                    'git delete new-email',
+                    'git gone new-email',
+                    'git branch -d new-email'
+                ],
+                rightAnswer: 3
+            },
+        ]
+    },
+    {
+        id:9,
+        name:'MySQL',
+        description: 'Teste agora os seus conhecimentos em MySQL.',
+        img: 'mysql.png',
+        questions:[
+            {
+                question: 'O que é MySQL?',
+                options: [
+                    'Desenvolvido, distribuído e apoiado pela Oracle Corporation',
+                    'Um sistema de gerenciamento de banco de dados relacional',
+                    'Todas as opções estão corretas',
+                    'Plataforma cruzada, código aberto e gratuito'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual instrução MySQL é usada para selecionar dados de um banco de dados?',
+                options: [
+                    'OPEN',
+                    'EXTRACT',
+                    'SELECT',
+                    'GET'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual instrução MySQL é usada para atualizar dados em um banco de dados?',
+                options: [
+                    'INSERT',
+                    'MODIFY',
+                    'GET',
+                    'UPDATE'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'Qual instrução MySQL é usada para excluir dados de um banco de dados?',
+                options: [
+                    'DELETE',
+                    'COLLAPSE',
+                    'REMOVE'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Qual instrução MYSQL é usada para inserir novos dados em um banco de dados?',
+                options: [
+                    'INSERT INTO',
+                    'ADD NEW',
+                    'INSERT NEW',
+                    'ADD RECORD'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com o MySQL, como você seleciona uma coluna chamada "FirstName" de uma tabela chamada "Pessoas"?',
+                options: [
+                    'EXTRACT FirstName FROM Persons',
+                    'SELECT Persons.FirstName',
+                    'SELECT FirstName FROM Persons'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Com o MySQL, como você seleciona todas as colunas de uma tabela chamada "Pessoas"?',
+                options: [
+                    'SELECT * FROM Persons',
+                    'SELECT Persons',
+                    'SELECT *.Persons',
+                    'SELECT [all] FROM Persons'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com o MySQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o valor da coluna "Nome" é "Pedro"?',
+                options: [
+                    'SELECT [all] FROM Persons WHERE FirstName LIKE "Peter"',
+                    'SELECT * FROM Persons WHERE FirstName="Peter"',
+                    'SELECT * FROM Persons WHERE FirstName<>"Peter"',
+                    'SELECT [all] FROM Persons WHERE FirstName="Peter"'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o MySQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o valor da coluna "Nome" começa com um "a"?',
+                options: [
+                    'SELECT * FROM Persons WHERE FirstName LIKE "%a"',
+                    'SELECT * FROM Persons WHERE FirstName="a"',
+                    'SELECT * FROM Persons WHERE FirstName="%a%"',
+                    'SELECT * FROM Persons WHERE FirstName LIKE "a%"'
+                ],
+                rightAnswer: 3
+            },
+            {
+                question: 'O operador OR exibe um registro se QUALQUER condição listada for verdadeira. O operador AND exibe um registro se TODAS as condições listadas forem verdadeiras',
+                options: [
+                    'Verdadeiro',
+                    'Falso'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com o MySQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "FirstName" é "Peter" e o "LastName" é "Jackson"?',
+                options: [
+                    'SELECT FirstName="Peter", LastName="Jackson" FROM Persons',
+                    'SELECT * FROM Persons WHERE FirstName<>"Peter" AND LastName<>"Jackson"',
+                    'SELECT * FROM Persons WHERE FirstName="Peter" AND LastName="Jackson"'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Com o MySQL, como você seleciona todos os registros de uma tabela chamada "Pessoas" onde o "Sobrenome" está em ordem alfabética entre (e incluindo) "Hansen" e "Pettersen"?',
+                options: [
+                    'SELECT * FROM Persons WHERE LastName>"Hansen" AND LastName<"Pettersen"',
+                    'SELECT LastName>"Hansen" AND LastName<"Pettersen" FROM Persons"',
+                    'SELECT * FROM Persons WHERE LastName BETWEEN "Hansen" AND "Pettersen"'
+                ],
+                rightAnswer: 2
+            },
+            {
+                question: 'Qual instrução do MySQL é usada para retornar apenas valores diferentes?',
+                options: [
+                    'SELECT UNIQUE',
+                    'SELECT DISTINCT',
+                    'SELECT DIFFERENT'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Qual palavra-chave do MySQL é usada para classificar o conjunto de resultados?',
+                options: [
+                    'SORT BY',
+                    'ORDER BY',
+                    'ORDER',
+                    'SORT'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o MySQL, como você pode retornar todos os registros de uma tabela chamada "Pessoas" classificados em ordem decrescente por "Nome"?',
+                options: [
+                    'SELECT * FROM Persons ORDER FirstName DESC',
+                    'SELECT * FROM Persons ORDER BY FirstName DESC',
+                    'SELECT * FROM Persons SORT "FirstName" DES',
+                    'SELECT * FROM Persons SORT BY "FirstName" DESC'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o MySQL, como você pode inserir um novo registro na tabela "Pessoas"?',
+                options: [
+                    'INSERT INTO Persons VALUES ("Jimmy", "Jackson")',
+                    'INSERT ("Jimmy", "Jackson") INTO Persons',
+                    'INSERT VALUES ("Jimmy", "Jackson") INTO Persons'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com o MySQL, como você pode inserir "Olsen" como o "Sobrenome" na tabela "Pessoas"?',
+                options: [
+                    'INSERT ("Olsen") INTO Persons (LastName)',
+                    'INSERT INTO Persons (LastName) VALUES ("Olsen")',
+                    'INSERT INTO Persons ("Olsen") INTO LastName'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Como você pode mudar "Hansen" para "Nilsen" na coluna "Sobrenome" na tabela Pessoas?',
+                options: [
+                    'MODIFY Persons SET LastName="Hansen" INTO LastName="Nilsen"',
+                    'UPDATE Persons SET LastName="Nilsen" WHERE LastName="Hansen"',
+                    'MODIFY Persons SET LastName="Nilsen" WHERE LastName="Hansen"',
+                    'UPDATE Persons SET LastName="Hansen" INTO LastName="Nilsen"'
+                ],
+                rightAnswer: 1
+            },
+            {
+                question: 'Com o MySQL, como você pode deletar os registros onde o "FirstName" é "Peter" na Tabela de Pessoas?',
+                options: [
+                    'DELETE FROM Persons WHERE FirstName = "Peter"',
+                    'DELETE FirstName="Peter" FROM Persons',
+                    'DELETE ROW FirstName="Peter" FROM Persons'
+                ],
+                rightAnswer: 0
+            },
+            {
+                question: 'Com o MySQL, como você pode retornar o número de registros na tabela "Pessoas"?',
+                options: [
+                    'SELECT NO(*) FROM Persons',
+                    'SELECT COLUMNS(*) FROM Persons',
+                    'SELECT COUNT(*) FROM Persons',
+                    'SELECT LEN(*) FROM Persons'
+                ],
+                rightAnswer: 2
             },
         ]
     }

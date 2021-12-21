@@ -1,5 +1,5 @@
 /*-----------------------------------------------------chronometer--------------------------------------------------------------*/
-let minutes = 9;
+let minutes = 14;
 let secounds = 60;
 
 let chronometer = setInterval(function(){
