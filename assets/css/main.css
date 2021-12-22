@@ -11,7 +11,7 @@ header{
 .logo{
     width: 150px;
     height: 40px;
-    background-image: url('../images/logo.png');
+    background-image: url('../images/logo.webp');
     background-position: center;
     background-size: 100% 100%;
 }
@@ -22,7 +22,7 @@ header{
     width: 100vw;
     max-width: 100%;
     height: calc(100vh - 60px);
-    background-image: url('../images/mainBanner.jpg');
+    background-image: url('../images/mainBanner.webp');
     background-position: center;
     background-size: 100% 100%;
     padding-top: 5vh;
@@ -57,7 +57,7 @@ header{
     right: 50%;
     width: 35px;
     height: 35px;
-    background-image: url('../images/downArrow.png');
+    background-image: url('../images/downArrow.webp');
     background-position: center;
     background-size: 100% 100%;
     cursor: pointer;
@@ -109,7 +109,7 @@ header{
     max-width: 100%;
     height: max-content;
     padding: 20px;
-    background-image: url('../images/boxQuizzes.png');
+    background-image: url('../images/boxQuizzes.webp');
     background-position: center;
     padding-top: 100px;
 }
@@ -334,7 +334,7 @@ footer{
 .logoFooter{
     width: 220px;
     height: 50px;
-    background-image: url('../images/logo.png');
+    background-image: url('../images/logo.webp');
     background-position: center;
     background-size: 100% 100%;
 }
@@ -384,7 +384,7 @@ footer form button:active{
 }
 
 .quizTimeImg{
-    background-image: url('../images/quizTime.png');
+    background-image: url('../images/quizTime.webp');
     background-position: center;
     background-size: 100% 100%;
     width: 170px;

@@ -5,7 +5,7 @@ let quizzes = [
         id:1,
         name:'JavaScript',
         description: 'Teste agora os seus conhecimentos na linguagem de programação javaScript.',
-        img: 'javaScript.jpg',
+        img: 'javaScript.webp',
         questions:[
             {
                 question: 'O que “1” + 2 + 4 retorna?',
@@ -265,7 +265,7 @@ let quizzes = [
         id:2,
         name:'Html',
         description: 'Teste agora os seus conhecimentos na linguagem de marcação html.',
-        img: 'html.jpg',
+        img: 'html.webp',
         questions:[
             {
                 question: 'O que quer dizer a sigla HTML?',
@@ -692,7 +692,7 @@ let quizzes = [
         id:3,
         name:'Php',
         description: 'Teste agora os seus conhecimentos na linguagem de programação php.',
-        img: 'php.png',
+        img: 'php.webp',
         questions:[
             {
                 question: 'O que PHP significa?',
@@ -912,7 +912,7 @@ let quizzes = [
         id:4,
         name:'Css',
         description: 'Teste agora os seus conhecimentos em css.',
-        img: 'css.png',
+        img: 'css.webp',
         questions:[
             {
                 question: 'O que CSS significa?',
@@ -1140,7 +1140,7 @@ let quizzes = [
         id:5,
         name:'Vue.js',
         description: 'Teste agora os seus conhecimentos com o framework Javascript vue.js.',
-        img: 'vue.jpg',
+        img: 'vue.webp',
         questions:[
             {
                 question: 'O que é VueJS?',
@@ -1239,7 +1239,7 @@ let quizzes = [
         id:6,
         name:'Bootstrap',
         description: 'Teste agora os seus conhecimentos com bootstrap.',
-        img: 'bootstrap.png',
+        img: 'bootstrap.webp',
         questions:[
             {
                 question: 'O Bootstrap 3 prioriza os dispositivos móveis.',
@@ -1488,7 +1488,7 @@ let quizzes = [
         id:7,
         name:'Sql',
         description: 'Teste agora os seus conhecimentos em sql.',
-        img: 'sql.png',
+        img: 'sql.webp',
         questions:[
             {
                 question: 'O que SQL significa?',
@@ -1732,7 +1732,7 @@ let quizzes = [
         id:8,
         name:'Git',
         description: 'Teste agora os seus conhecimentos em git.',
-        img: 'git.png',
+        img: 'git.webp',
         questions:[
             {
                 question: 'O que é Git?',
@@ -1932,7 +1932,7 @@ let quizzes = [
         id:9,
         name:'MySQL',
         description: 'Teste agora os seus conhecimentos em MySQL.',
-        img: 'mysql.png',
+        img: 'mysql.webp',
         questions:[
             {
                 question: 'O que é MySQL?',
