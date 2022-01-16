@@ -198,7 +198,7 @@ function showResultOnScreen(hits, mistakes){
     if(hits >= (numberOfQuestions * 90 / 100)){
         document.querySelector('.boxResults--title').innerText = "PARABÉNS";
         document.querySelector('.boxResults--title').style.background = 'green';
-        document.querySelector('.finalResult img').src = './assets/images/veryGood.png';
+        document.querySelector('.finalResult img').src = './assets/images/veryGood.webp';
         document.querySelector('.finalResult--messages h1').innerText = "Uau! Você foi incrivelmente bem!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
@@ -207,7 +207,7 @@ function showResultOnScreen(hits, mistakes){
     if(hits >= (numberOfQuestions * 70 / 100) && hits < (numberOfQuestions * 90 / 100)){
         document.querySelector('.boxResults--title').innerText = "PARABÉNS";
         document.querySelector('.boxResults--title').style.background = 'green';
-        document.querySelector('.finalResult img').src = './assets/images/good.png';
+        document.querySelector('.finalResult img').src = './assets/images/good.webp';
         document.querySelector('.finalResult--messages h1').innerText = "Nice! Você foi muito bem!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
@@ -216,7 +216,7 @@ function showResultOnScreen(hits, mistakes){
     if(hits >= (numberOfQuestions * 40 / 100) && hits < (numberOfQuestions * 70 / 100)){
         document.querySelector('.boxResults--title').innerText = "Boa";
         document.querySelector('.boxResults--title').style.background = '#1097cc';
-        document.querySelector('.finalResult img').src = './assets/images/normal.png';
+        document.querySelector('.finalResult img').src = './assets/images/normal.webp';
         document.querySelector('.finalResult--messages h1').innerText = "Você conseguiu se virar no quiz!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
@@ -225,7 +225,7 @@ function showResultOnScreen(hits, mistakes){
     if(hits >= (numberOfQuestions * 20 / 100) && hits < (numberOfQuestions * 40 / 100)){
         document.querySelector('.boxResults--title').innerText = "Não foi muito bom";
         document.querySelector('.boxResults--title').style.background = '#cc1010';
-        document.querySelector('.finalResult img').src = './assets/images/bad.png';
+        document.querySelector('.finalResult img').src = './assets/images/bad.webp';
         document.querySelector('.finalResult--messages h1').innerText = "Você não conseguiu ir muito bem!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;
@@ -234,7 +234,7 @@ function showResultOnScreen(hits, mistakes){
     if(hits >= 0 && hits < (numberOfQuestions * 20 / 100)){
         document.querySelector('.boxResults--title').innerText = "Nheee";
         document.querySelector('.boxResults--title').style.background = '#cc1010';
-        document.querySelector('.finalResult img').src = './assets/images/veryBad.png';
+        document.querySelector('.finalResult img').src = './assets/images/veryBad.webp';
         document.querySelector('.finalResult--messages h1').innerText = "Você errou bastate coisa!";
         document.querySelector('.hitsNumber').innerText = hits;
         document.querySelector('.mistakesNumber').innerText = mistakes;

@@ -236,7 +236,6 @@ let quizzes = [
                 question: 'O que o código a seguir retornará: Boolean (10> 9)',
                 options: [
                     'true',
-                    'NaN',
                     'false'
                 ],
                 rightAnswer: 0
